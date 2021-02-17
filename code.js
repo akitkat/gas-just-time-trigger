@@ -13,7 +13,7 @@ const main = () => {
   const triggers = ScriptApp.getProjectTriggers()
   for (let i in triggers) {
     if ('main' == triggers[i].getHandlerFunction()) {
-      ScriptApp.deleteTrigger(triggers[i]);
+      ScriptApp.deleteTrigger(triggers[i])
     }
   }
 }
